@@ -1,0 +1,69 @@
+site_name: TODO List — Documentação
+site_url: https://caiochiabai.github.io/todo-list
+site_description: Documentação completa da aplicação TODO List desenvolvida com SPEC-DRIVEN Development e arquitetura MVC.
+site_author: Caio Chiabai
+repo_url: https://github.com/CaioChiabai/todo-list
+repo_name: CaioChiabai/todo-list
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para tema escuro
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para tema claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Metodologia SDD: sdd.md
+  - Especificações:
+      - Spec: specs/spec.md
+      - Modelo de Dados: specs/data-model.md
+      - Pesquisa: specs/research.md
+      - Plano de Implementação: specs/plan.md
+      - Tarefas: specs/tasks.md
+      - Início Rápido: specs/quickstart.md
+  - Contratos:
+      - API v1: contracts/api-v1.md
+  - Constituição: memory/constitution.md
+  - Arquitetura: architecture.md
+  - Deploy: deployment.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CaioChiabai
