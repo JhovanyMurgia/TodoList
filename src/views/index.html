@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO List</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="toolbar" aria-label="Resumo da lista">
+      <div>
+        <p class="eyebrow">Projeto MVC</p>
+        <h1>TODO List</h1>
+      </div>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Alternar tema" title="Alternar tema">
+        <span id="themeIcon">Tema</span>
+      </button>
+    </section>
+
+    <section class="task-form-section" aria-label="Cadastro de tarefa">
+      <form id="taskForm" class="task-form">
+        <label for="title">Titulo</label>
+        <input id="title" name="title" type="text" maxlength="100" required placeholder="Ex.: estudar API REST">
+
+        <label for="description">Descricao</label>
+        <textarea id="description" name="description" maxlength="500" rows="3" placeholder="Detalhes opcionais da tarefa"></textarea>
+
+        <button type="submit">Adicionar tarefa</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section class="task-summary" aria-label="Indicadores">
+      <article>
+        <strong id="totalCount">0</strong>
+        <span>Total</span>
+      </article>
+      <article>
+        <strong id="pendingCount">0</strong>
+        <span>Pendentes</span>
+      </article>
+      <article>
+        <strong id="doneCount">0</strong>
+        <span>Concluidas</span>
+      </article>
+    </section>
+
+    <section aria-label="Lista de tarefas">
+      <div class="list-header">
+        <h2>Tarefas</h2>
+        <button class="ghost-button" id="refreshButton" type="button">Atualizar</button>
+      </div>
+      <div id="taskList" class="task-list"></div>
+      <p id="emptyState" class="empty-state">Nenhuma tarefa cadastrada ainda.</p>
+    </section>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
