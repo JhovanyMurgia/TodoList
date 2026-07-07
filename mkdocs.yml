@@ -1,9 +1,9 @@
 site_name: TODO List - Documentacao
 site_description: Documentacao tecnica da aplicacao TODO List com MVC, API REST e testes.
-site_author: Seu Nome
-site_url: https://seu-usuario.github.io/todo-list
-repo_url: https://github.com/seu-usuario/todo-list
-repo_name: seu-usuario/todo-list
+site_author: Jhovany Murgia
+site_url: todo-list-wheat-beta.vercel.app
+repo_url: https://github.com/JhovanyMurgia/TodoList
+repo_name: JhovanyMurgia/TodoList
 
 theme:
   name: material
