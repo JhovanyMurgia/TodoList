@@ -1,0 +1,39 @@
+{
+  "name": "todo-list-faculdade",
+  "version": "1.0.0",
+  "description": "Aplicacao TODO List com Node.js, Express, MVC, testes automatizados e documentacao MkDocs.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "node node_modules/jest/bin/jest.js --coverage"
+  },
+  "keywords": [
+    "todo",
+    "mvc",
+    "express",
+    "nodejs",
+    "mkdocs"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/work/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/work/"
+    ]
+  }
+}
