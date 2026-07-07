@@ -4,9 +4,9 @@ Aplicacao web de gerenciamento de tarefas desenvolvida para disciplina da faculd
 
 ## Links
 
-- Aplicacao: `https://seu-projeto.onrender.com`
+- Aplicacao: `todo-list-wheat-beta.vercel.app`
 - Documentacao: `https://seu-usuario.github.io/todo-list`
-- Repositorio: `https://github.com/seu-usuario/todo-list`
+- Repositorio: `https://github.com/JhovanyMurgia/TodoList`
 
 ## Funcionalidades
 
