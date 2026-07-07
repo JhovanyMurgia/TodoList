@@ -1,0 +1,48 @@
+site_name: TODO List - Documentacao
+site_description: Documentacao tecnica da aplicacao TODO List com MVC, API REST e testes.
+site_author: Jhovany Murgia
+site_url: todo-list-wheat-beta.vercel.app
+repo_url: https://github.com/JhovanyMurgia/TodoList
+repo_name: JhovanyMurgia/TodoList
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para tema escuro
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para tema claro
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Metodologia: methodology.md
+  - Arquitetura: architecture.md
+  - Especificacao: specs/spec.md
+  - Modelo de Dados: specs/data-model.md
+  - Plano: specs/plan.md
+  - Tarefas: specs/tasks.md
+  - Contrato da API: contracts/api-v1.md
+  - Deploy: deployment.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - tables
+  - toc:
+      permalink: true
